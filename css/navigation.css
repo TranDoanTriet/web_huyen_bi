@@ -15,7 +15,7 @@
 }
 
 .footer-navigation{
-    position: absolute;
+    position: fixed;
     bottom: 1%;
     left: 50%;
     transform: translateX(-50%);

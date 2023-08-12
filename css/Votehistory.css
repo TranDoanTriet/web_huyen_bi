@@ -1,0 +1,50 @@
+.app{
+    background-color: #f2f0f0;
+}
+.container {
+    max-width: 576px;
+    margin: auto;
+}
+.history-title{
+    background-image: linear-gradient(to left top, #dfcdd8, #e3ced9, #e7cfda, #ebcfda, #efd0da, #edd0e0, #ead1e5, #e5d2eb, #d2d6f4, #bcdaf4, #acdeec, #a8dfdb);
+    width: 100vw;
+    text-align: center;
+    height: 50px;
+    padding-top: 17px;
+    color: #454545;
+}
+
+.vote-item{
+    border: 1px solid #e3ced9;
+    margin: 10px;
+    padding: 0 20px;
+    background-color: white;
+}
+
+.vote-item .head img{
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+.vote-item .head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top:5px ;
+}
+
+.vote-selection ul li{
+    width: 50px;
+    height: 20px;
+    margin-top: 10px;
+}
+
+.vote-selection ul{
+    display: flex;
+}
+
+.vote-time, .vote-time-update, .vote-point{
+    margin-top: 5px;
+}
