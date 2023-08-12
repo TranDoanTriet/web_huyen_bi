@@ -1,0 +1,41 @@
+
+.container {
+    max-width: 576px;
+    margin: auto;
+}
+.app{
+    background-image: url(../img/login/logo2.jpg);
+    /* background-image: linear-gradient(to left top, #df67ab, #c773ba, #af7ec1, #9986c0, #888bba, #7588b0, #6783a3, #5d7e95, #467182, #31636f, #1f565a, #114845); */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+input,
+button {
+  padding: 0;
+  margin: 0;
+  outline: none;
+  background: none;
+  border: 1px solid #333;
+  border-radius: 5px;
+}
+.table-point-input{
+    width: 60px;
+    padding: 5px 5px;
+    font-size: 13px;
+}
+.table-point-btn{
+    font-size: 13px;
+    padding: 5px 5px;
+    background-color: aquamarine;
+    border: 1px solid;
+}
+.table-delete-btn{
+    flex-grow: 13px;
+    padding: 3px 5px;
+    background-color: #F16965;
+    border: 1px solid;
+}
+.dataTables_info{
+    color: #C2560F  !important;
+}

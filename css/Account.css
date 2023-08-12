@@ -1,0 +1,137 @@
+a{
+    text-decoration: none;
+    color: #333;
+}
+button{
+    background: none;
+    outline: none;
+    border: none;
+}
+ul, ol{
+    list-style: none;
+}
+.app{
+    background-color: #f2f0f0;
+}
+.container{
+    max-width: 370px;
+    margin: auto;
+}
+
+.account .account_image{
+    width: 100%;
+    height: 150px;
+    background-image: linear-gradient(to left top, #dfcdd8, #e3ced9, #e7cfda, #ebcfda, #efd0da, #edd0e0, #ead1e5, #e5d2eb, #d2d6f4, #bcdaf4, #acdeec, #a8dfdb);
+    border-bottom: 1px solid #cecece;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.account .account_image img{
+    display:block;
+    width: 60px;
+    height: 60px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.account .account_image span a{
+    color: rgb(72, 72, 72);
+}
+
+.account_bank {
+    background-color: white;
+    height: 60px;
+    border-radius: 10px;
+    border: 1px solid #cecece;
+    transform: translateY(-30px);
+    width: 100%;
+    align-items: center;
+    display: flex;
+    padding: 10px;
+}
+
+.account_bank .icon i{
+    font-size: 22px;
+    font-weight: 500;
+}
+.account_bank .deposit, .account_bank .withdraw{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.account_bank .deposit .deposit-title, .account_bank .withdraw .withdraw-title{
+    font-size: 15px;
+    margin-left: 10px;
+}
+.account-function-list{
+    display: flex;
+    border: 1px solid #cecece;
+    background: white;
+    border-radius: 10px;
+    padding: 5px;
+}
+.account-function-list ul li{
+    height: 50px;
+}
+.account-function-list ul{
+width: 50%;
+}
+.account-function-list ul li a{
+    font-size: 16px;
+}
+
+.account-function-list ul li span i{
+    font-size: 16px;
+}
+.logout-btn{
+    margin-top: 20px;
+    width: 100%;
+    font-size: 16px;
+    border-radius: 10px;
+    background-image: linear-gradient(to left top, #dfcdd8, #e3ced9, #e7cfda, #ebcfda, #efd0da, #edd0e0, #ead1e5, #e5d2eb, #d2d6f4, #bcdaf4, #acdeec, #a8dfdb);;
+    text-align: center;
+    color: white;
+}
+.logout-btn button{
+    color: rgb(253, 253, 253);
+    font-size: 16px;
+    display: inline-block;
+    width: 100%;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+.logout-btn button:hover{
+    cursor: pointer;
+    background-image: linear-gradient(to left top, #a79ca3, #afa0a8, #b7a4ad, #bfa8b2, #c7acb6, #c3abb9, #bfaabc, #b9aabf, #a1a5bd, #89a1b5, #779ca6, #6e9592);
+}
+
+#popup-account-info{
+    width: 350px;
+    background-color: white;
+    border-radius: 5px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0.1);
+    padding: 20px;
+    border: 1px solid #a79ca3;
+    visibility: hidden;
+    transition: 0.5s;
+}
+.account-bank-submit{
+    border-radius: 10px;
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+    color: white;
+    background-image: linear-gradient(to left top, #dfcdd8, #e3ced9, #e7cfda, #ebcfda, #efd0da, #edd0e0, #ead1e5, #e5d2eb, #d2d6f4, #bcdaf4, #acdeec, #a8dfdb);
+}
+
+.open-popup{
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%,-50%) scale(1);
+}
