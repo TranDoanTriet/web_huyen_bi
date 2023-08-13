@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/navigation.css">
+    <link rel="stylesheet" href="./css/Votehistory.css">
+    <link rel="stylesheet" href="./css/Vote.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="app">
+        <div id="popup-vote-info" class="">
+            <div class="danhsachphanki">
+                <div class="danhsachphankihead">
+                    <span class="a">Kì Số</span>|
+                    <span class="b">Kết quả</span>
+                </div>
+                <div class="danhsachphankiketqua">
+                    <ul>
+                        <li class="item-period">
+                            <span class="sokibinhchon">202308091123</span>
+                            <span class="sokiketqua">
+                                <span>A</span>
+                            </span>
+                        </li>
+                        <li class="item-period">
+                            <span class="sokibinhchon">202308091123</span>
+                            <span class="sokiketqua">
+                                <span>A</span>
+                            </span>
+                        </li>
+                        <li class="item-period">
+                            <span class="sokibinhchon">202308091123</span>
+                            <span class="sokiketqua">
+                                <span>A</span>
+
+                            </span>
+                        </li>
+                        <li class="item-period">
+                            <span class="sokibinhchon">202308091123</span>
+                            <span class="sokiketqua">
+                                <span>A</span>
+                                <span>C</span>
+                                <span>D</span>
+                            </span>
+                        </li>
+                        <li class="item-period">
+                            <span class="sokibinhchon">202308091123</span>
+                            <span class="sokiketqua">
+                                <span>A</span>
+                            </span>
+                        </li>
+                        <li class="item-period">
+                            <span class="sokibinhchon">202308091123</span>
+                            <span class="sokiketqua">
+                                <span>A</span>
+                                <span>B</span>
+                                <span>C</span>
+                                <span>D</span>
+                            </span>
+                        </li>
+                        <li class="item-period">
+                            <span class="sokibinhchon">202308091123</span>
+                            <span class="sokiketqua">
+                                <span>A</span>
+                                <span>B</span>
+                            </span>
+                        </li>
+                        <li class="item-period">
+                            <span class="sokibinhchon">202308091123</span>
+                            <span class="sokiketqua">
+                                <span>A</span>
+                                <span>B</span>
+                                <span>C</span>
+                                <span>D</span>
+                            </span>
+                        </li>
+                    </ul>
+                    
+                </div>
+            </div>
+            <button class="popup-vote-submit" type="submit" onclick="closePopup()">OK</button>
+        </div>
+        <div class="history-title">
+            Bình chọn 1
+        </div>
+        <header>
+            <div class="phanki">
+                <div class="phankihinhanh">
+                    <img src="./img/vote/binhchon1.jpg" alt="">
+                    <span class="kicu">202308091123</span>
+                </div>
+                <div class="phankithoigian">
+                    <span class="kimoi">202308091125</span>
+                    <span class="thoigian">02:33</span>
+                </div>
+            </div>
+            <div class="phankibinhchon">
+                <div class="binhchon">
+                    <span class="luachon">A</span>
+                    <span class="luachon">B</span>
+                </div>
+                <div class="xemcacki">
+                    <button type="submit" onclick="openPopup()">Xem bình chọn</button>
+                    <a href="#">Lịch sử</a>
+                </div>
+            </div>
+        </header>
+        <div class="vote-selection">
+            <div class="input-box-wrapper">
+                <form action="" class="formBophieu">
+                    <div class="box">
+                        <input type="checkbox" value="A" class="Checkbox" id="A">
+                        <label for="A">A</label>
+                    </div>
+                    <div class="box">
+                        <input type="checkbox" value="B" class="Checkbox" id="B">
+                        <label for="B">B</label>
+                    </div>
+                    <div class="box">
+                        <input type="checkbox" value="C" class="Checkbox" id="C">
+                        <label for="C">C</label>
+                    </div>
+                    <div class="box">
+                        <input type="checkbox" value="D" class="Checkbox" id="D">
+                        <label for="D">D</label>
+                    </div>
+                    <div class="nhapluachon">
+                        <div class="luachonhientai">
+                            <span>Lựa chọn hiện tại: </span>
+                            <span id="inraketqua"></span>
+                        </div>
+                    </div>
+                    <div class="nhapsodiem">
+                        <span>Nhập số điểm: </span>
+                        <input class="nhapdiem" type="number" name="nhapsodiem" id="diemdanhap" oninput="getValue()">
+                    </div>
+                    <div>
+                        <span>Đã chọn: </span>
+                        <span id="tongsoluachon"></span>
+                        <span >Tổng</span>
+                        <span id="tongdiem"></span>
+                    </div>
+                    <div class="sodukhadung">
+                        <div>
+                            <span>Số dư khả dụng: </span>
+                            <span>500</span>
+                        </div>
+                        <button type="submit" class="bophieu">Bỏ Phiếu</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <footer class="footer-navigation">
+            <div class="navigation-1">
+                <ul class="ul-list">
+                    <li class="li-list li-active">
+                        <a href="#">
+                            <span class="span-icon">
+                                <ion-icon name="home-outline"></ion-icon>
+                            </span>
+                            <span class="span-title">Home</span>
+                        </a>
+                    </li>
+                    <li class="li-list">
+                        <a href="#">
+                            <span class="span-icon">
+                                <ion-icon name="game-controller-outline"></ion-icon>
+                            </span>
+                            <span class="span-title">Game</span>
+                        </a>
+                    </li>
+                    <li class="li-list">
+                        <a href="#">
+                            <span class="span-icon">
+                                <ion-icon name="people-circle-outline"></ion-icon>
+                            </span>
+                            <span class="span-title">Manage</span>
+                        </a>
+                    </li>
+                    <li class="li-list">
+                        <a href="#">
+                            <span class="span-icon">
+                                <ion-icon name="person-outline"></ion-icon>
+                            </span>
+                            <span class="span-title">Account</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+    <script src="./js/Vote.js"></script>
+</body>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script src="./js/navigation.js"></script>
+</html>l

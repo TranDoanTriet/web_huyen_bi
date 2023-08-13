@@ -1,0 +1,185 @@
+.app{
+    height: auto;
+}
+button, input{
+    border: none;
+    background: none;
+    outline: none;
+}
+header .phanki .phankihinhanh img{
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+}
+header .phanki{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .phanki .phankithoigian {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+header .phanki .phankihinhanh{
+    display: flex;
+    align-items: center;
+}
+header .phanki{
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #e3ced9;
+    border-radius: 5px;
+}
+
+header{
+    /* border: 1px solid #e3ced9; */
+}
+.kicu, .kimoi{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.kicu{
+    margin-left: 5px;
+}
+
+.thoigian{
+    color: red;
+}
+.phankibinhchon{
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.binhchon .luachon{
+    margin-right: 20px;
+    color: red;
+    font-weight: 600;
+}
+
+.xemcacki button, .xemcacki a{
+    display: inline-block;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #e3ced9;
+    background-color: #e3ced9;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none;
+    color: #333;
+}
+
+#popup-vote-info{
+    width: 350px;
+    background-color: white;
+    border-radius: 5px;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%,50%) scale(0.1);
+    padding: 20px;
+    border: 1px solid #a79ca3;
+    visibility: hidden;
+    transition: 0.5s;
+}
+
+.popup-vote-submit{
+    border-radius: 10px;
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+    color: white;
+    background-image: linear-gradient(to left top, #dfcdd8, #e3ced9, #e7cfda, #ebcfda, #efd0da, #edd0e0, #ead1e5, #e5d2eb, #d2d6f4, #bcdaf4, #acdeec, #a8dfdb);
+}
+
+.danhsachphanki{
+    height: 300px;
+    overflow: auto;
+    position: relative;
+}
+
+.danhsachphanki::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.1);
+	background-color: #F5F5F5;
+	border-radius: 10px;
+}
+
+.danhsachphanki::-webkit-scrollbar
+{
+	width: 2px;
+	background-color: #F5F5F5;
+}
+
+.danhsachphanki::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	background-color: #FFF;
+	background-image: -webkit-linear-gradient(top,
+											  #e4f5fc 0%,
+											  #bfe8f9 50%,
+											  #9fd8ef 51%,
+											  #2ab0ed 100%);
+}
+
+.danhsachphankihead{
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+    text-align: center;
+    background: red;
+    border-bottom: 1px solid #efd0da;
+    padding: 0 50px;
+    z-index: 100;
+    background-image: linear-gradient(to left top, #dfcdd8, #e3ced9, #e7cfda, #ebcfda, #efd0da, #edd0e0, #ead1e5, #e5d2eb, #d2d6f4, #bcdaf4, #acdeec, #a8dfdb);
+}
+
+.danhsachphankiketqua{
+    position: relative;
+    top: 40px;
+}
+.danhsachphankiketqua .sokibinhchon{
+    display: inline-block;
+    width: 60%;
+}
+.danhsachphankiketqua .sokiketqua span{
+    margin-right: 10px;
+}
+.item-period{
+    padding: 10px 0;
+}
+#inraketqua{
+    color: red;
+}
+.nhapdiem{
+    border: 1px solid #e3ced9;
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.bophieu{
+    border: 1px solid #e3ced9;
+    border-radius: 5px;
+    font-size: 15px;
+    padding: 5px;
+    cursor: pointer;
+}
+.sodukhadung{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.formBophieu{
+    /* padding: 10px; */
+
+}
