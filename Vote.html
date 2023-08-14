@@ -94,7 +94,7 @@
                 </div>
                 <div class="phankithoigian">
                     <span class="kimoi">202308091125</span>
-                    <span class="thoigian">02:33</span>
+                    <span class="thoigian" id="countdown"></span>
                 </div>
             </div>
             <div class="phankibinhchon">
@@ -111,21 +111,23 @@
         <div class="vote-selection">
             <div class="input-box-wrapper">
                 <form action="" class="formBophieu">
-                    <div class="box">
-                        <input type="checkbox" value="A" class="Checkbox" id="A">
-                        <label for="A">A</label>
-                    </div>
-                    <div class="box">
-                        <input type="checkbox" value="B" class="Checkbox" id="B">
-                        <label for="B">B</label>
-                    </div>
-                    <div class="box">
-                        <input type="checkbox" value="C" class="Checkbox" id="C">
-                        <label for="C">C</label>
-                    </div>
-                    <div class="box">
-                        <input type="checkbox" value="D" class="Checkbox" id="D">
-                        <label for="D">D</label>
+                    <div class="vote-option">
+                        <div class="box">
+                            <input type="checkbox" value="A" class="Checkbox" id="A">
+                            <label for="A"><span>A</span></label>
+                        </div>
+                        <div class="box">
+                            <input type="checkbox" value="B" class="Checkbox" id="B">
+                            <label for="B"><span>B</span></label>
+                        </div>
+                        <div class="box">
+                            <input type="checkbox" value="C" class="Checkbox" id="C">
+                            <label for="C"><span>C</span></label>
+                        </div>
+                        <div class="box">
+                            <input type="checkbox" value="D" class="Checkbox" id="D">
+                            <label for="D"><span>D</span></label>
+                        </div>
                     </div>
                     <div class="nhapluachon">
                         <div class="luachonhientai">
@@ -137,18 +139,20 @@
                         <span>Nhập số điểm: </span>
                         <input class="nhapdiem" type="number" name="nhapsodiem" id="diemdanhap" oninput="getValue()">
                     </div>
-                    <div>
+                    <div class="dachon-tongdiem">
                         <span>Đã chọn: </span>
                         <span id="tongsoluachon"></span>
-                        <span >Tổng</span>
+                        <span >Tổng: </span>
                         <span id="tongdiem"></span>
                     </div>
                     <div class="sodukhadung">
                         <div>
                             <span>Số dư khả dụng: </span>
-                            <span>500</span>
+                            <span id="sodukhadung">500</span>
                         </div>
-                        <button type="submit" class="bophieu">Bỏ Phiếu</button>
+                        <button type="submit" class="bophieu" id="bophieu">Bỏ Phiếu</button>
+                    </div>
+                    <div id="thongbaosodu">
                     </div>
                 </form>
             </div>
@@ -197,4 +201,4 @@
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 <script src="./js/navigation.js"></script>
-</html>l
+</html>

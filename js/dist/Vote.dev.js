@@ -3,10 +3,27 @@
 var popUp = document.getElementById('popup-vote-info');
 var listArr = [];
 var checkboxs = document.querySelectorAll('.Checkbox');
-var list = document.getElementById('inraketqua');
+var listVote = document.getElementById('inraketqua');
 var totalSelection = document.getElementById('tongsoluachon');
-var totalPoint = document.getElementById('tongdiem'); // let diemdanhap = document.getElementById('diemdanhap').value
-// console.log(diemdanhap)
+var totalPoint = document.getElementById('tongdiem');
+var diemdanhap = document.getElementById('diemdanhap');
+var listArrTracking = 0;
+var thongbao = document.getElementById('thongbaosodu');
+var nutbophieu = document.getElementById('bophieu'); //get value ô nhập điêm
+
+function getValue() {
+  var valueinput = diemdanhap.value;
+  totalPoint.innerHTML = Number(valueinput) * listArr.length;
+  var sodu = document.getElementById('sodukhadung').innerHTML;
+
+  if (Number(sodu) < Number(valueinput) * listArr.length) {
+    thongbao.innerHTML = 'Số dư không đủ';
+    nutbophieu.style.visibility = 'hidden';
+  } else {
+    thongbao.innerHTML = '';
+    nutbophieu.style.visibility = 'visible';
+  }
+}
 
 var _iteratorNormalCompletion = true;
 var _didIteratorError = false;
@@ -20,14 +37,20 @@ try {
 
       if (this.checked == true) {
         listArr.push(this.value);
-        list.innerHTML = listArr.join(',');
+        listVote.innerHTML = listArr.join(',');
         totalSelection.innerHTML = listArr.length;
+        listArrTracking = listArr.length;
+        getValue();
       } else {
         listArr = listArr.filter(function (item) {
           return item != _this.value;
         });
-        list.innerHTML = listArr.join(',');
+        listVote.innerHTML = listArr.join(',');
         totalSelection.innerHTML = listArr.length;
+
+        if (listArr.length < listArrTracking) {
+          getValue();
+        }
       }
     });
   }
@@ -46,12 +69,6 @@ try {
   }
 }
 
-function getValue() {
-  var diemdanhap = document.getElementById('diemdanhap');
-  var valueinput = diemdanhap.value;
-  totalPoint.innerHTML = Number(valueinput) * listArr.length;
-}
-
 function openPopup() {
   popUp.style.visibility = 'visible';
   popUp.style.top = '50%';
@@ -63,3 +80,31 @@ function closePopup() {
   popUp.style.top = '0';
   popUp.style.transform = 'translate(-50%,-50%) scale(0.1)';
 }
+
+var timeInSecs;
+var ticker;
+var timmer = 2;
+
+function startTimer(secs) {
+  timeInSecs = parseInt(secs);
+  ticker = setInterval("tick()", 1000);
+}
+
+function tick() {
+  var secs = timeInSecs;
+
+  if (secs > 0) {
+    timeInSecs--;
+  } else {
+    clearInterval(ticker);
+    location.reload();
+    startTimer(timmer * 60);
+  }
+
+  var mins = Math.floor(secs / 60);
+  secs %= 60;
+  var pretty = (mins < 10 ? "0" : "") + mins + ":" + (secs < 10 ? "0" : "") + secs;
+  document.getElementById("countdown").innerHTML = pretty;
+}
+
+startTimer(timmer * 60);
