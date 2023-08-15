@@ -2322,7 +2322,7 @@
             ],
             aaSortingFixed: [],
             ajax: null,
-            aLengthMenu: [5, 10, 25, 50, 100],
+            aLengthMenu: [5, 7],
             aoColumns: null,
             aoColumnDefs: null,
             aoSearchCols: [],
@@ -2373,7 +2373,7 @@
             fnStateSaveParams: null,
             iStateDuration: 7200,
             iDeferLoading: null,
-            iDisplayLength: 10,
+            iDisplayLength: 7,
             iDisplayStart: 0,
             iTabIndex: 0,
             oClasses: {},
@@ -2389,16 +2389,16 @@
                     sPrevious: "Previous"
                 },
                 sEmptyTable: "No data available in table",
-                sInfo: "Showing _START_ to _END_ of _TOTAL_ entries",
+                sInfo: "Hiện _START_ tới _END_ của _TOTAL_ người dùng",
                 sInfoEmpty: "Showing 0 to 0 of 0 entries",
                 sInfoFiltered: "(filtered from _MAX_ total entries)",
                 sInfoPostFix: "",
                 sDecimal: "",
                 sThousands: ",",
-                sLengthMenu: "Show _MENU_ entries",
+                sLengthMenu: "HIện _MENU_ người",
                 sLoadingRecords: "Loading...",
                 sProcessing: "",
-                sSearch: "Search:",
+                sSearch: "Tìm kiếm:",
                 sSearchPlaceholder: "",
                 sUrl: "",
                 sZeroRecords: "No matching records found"
@@ -2521,7 +2521,7 @@
             iDraw: 0,
             bDrawing: !1,
             iDrawError: -1,
-            _iDisplayLength: 10,
+            _iDisplayLength: 7,
             _iDisplayStart: 0,
             _iRecordsTotal: 0,
             _iRecordsDisplay: 0,
@@ -2648,7 +2648,7 @@
     }
     P.extend(Ne, {
         simple: function(t, e) {
-            return ["previous", "next"]
+            return ["Trước", "Sau"]
         },
         full: function(t, e) {
             return ["first", "previous", "next", "last"]
@@ -2657,13 +2657,13 @@
             return [Oe(t, e)]
         },
         simple_numbers: function(t, e) {
-            return ["previous", Oe(t, e), "next"]
+            return ["Trước ", Oe(t, e), "Sau "]
         },
         full_numbers: function(t, e) {
             return ["first", "previous", Oe(t, e), "next", "last"]
         },
         first_last_numbers: function(t, e) {
-            return ["first", Oe(t, e), "last"]
+            return ["Trước", Oe(t, e), "Sau"]
         },
         _numbers: Oe,
         numbers_length: 7
