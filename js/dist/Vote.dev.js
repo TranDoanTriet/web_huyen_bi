@@ -9,7 +9,8 @@ var totalPoint = document.getElementById('tongdiem');
 var diemdanhap = document.getElementById('diemdanhap');
 var listArrTracking = 0;
 var thongbao = document.getElementById('thongbaosodu');
-var nutbophieu = document.getElementById('bophieu'); //get value ô nhập điêm
+var nutbophieu = document.getElementById('bophieu');
+var timmers = 0; //get value ô nhập điêm
 
 function getValue() {
   var valueinput = diemdanhap.value;
@@ -83,7 +84,7 @@ function closePopup() {
 
 var timeInSecs;
 var ticker;
-var timmer = 2;
+setTimeout(timmers = Number(document.getElementById('countdown').innerHTML), 100); // let timmer = 189;
 
 function startTimer(secs) {
   timeInSecs = parseInt(secs);
@@ -98,7 +99,7 @@ function tick() {
   } else {
     clearInterval(ticker);
     location.reload();
-    startTimer(timmer * 60);
+    startTimer(timmers);
   }
 
   var mins = Math.floor(secs / 60);
@@ -107,4 +108,4 @@ function tick() {
   document.getElementById("countdown").innerHTML = pretty;
 }
 
-startTimer(timmer * 60);
+startTimer(timmers);
