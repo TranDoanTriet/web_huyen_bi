@@ -1,0 +1,49 @@
+button{
+    background: none;
+    outline: none;
+    border: none;
+}
+
+.history-title{
+    background-image: linear-gradient(to left top, #dfcdd8, #e3ced9, #e7cfda, #ebcfda, #efd0da, #edd0e0, #ead1e5, #e5d2eb, #d2d6f4, #bcdaf4, #acdeec, #a8dfdb);
+    width: 100vw;
+    text-align: center;
+    height: 50px;
+    padding-top: 17px;
+    color: #454545;
+}
+
+.container {
+    max-width: 400px;
+    margin: auto;
+}
+.widraw-section{
+    margin-top: 10px;
+}
+.widraw-section .widraw-person{
+    border: 1px solid #a79ca3;
+    border-radius: 5px;
+    padding: 10px;
+}
+.flex{
+    display: flex;
+}
+.mb-1{
+    margin-bottom: 5px;
+}
+.align-tiem-center{
+    align-items: center;
+}
+.justify-between{
+    justify-content: space-between;
+}
+
+.widraw-btn{
+    background-color: #e7cfda;
+    /* color: white; */
+    padding: 10px;
+    border-radius: 5px;
+}
+.ml-1{
+    margin-left: 15px;
+}
