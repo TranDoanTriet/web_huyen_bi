@@ -20,13 +20,13 @@ body{
 
 .footer-navigation{
     position: fixed;
-    bottom: 1%;
+    bottom: 0;
     left: 50%;
     transform: translateX(-50%);
 }
 .navigation-1{
-    max-width: 576px;
-    min-width: 450px;
+    max-width: 400px;
+    min-width: 350px;
     height: 70px;
     position: relative;
     display: flex;
@@ -38,8 +38,9 @@ body{
 
 .navigation-1 .ul-list{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     width: 100%;
+    padding-left: 0;
 }
 
 .navigation-1 .ul-list .li-list a{
