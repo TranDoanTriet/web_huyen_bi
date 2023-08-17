@@ -4,7 +4,6 @@
     margin: auto;
 }
 .app{
-    background-image: url(../img/login/logo2.jpg);
     /* background-image: linear-gradient(to left top, #df67ab, #c773ba, #af7ec1, #9986c0, #888bba, #7588b0, #6783a3, #5d7e95, #467182, #31636f, #1f565a, #114845); */
     background-size: cover;
     background-position: center;
