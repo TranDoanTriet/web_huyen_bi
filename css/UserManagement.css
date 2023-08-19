@@ -38,3 +38,8 @@ button {
 .dataTables_info{
     color: #C2560F  !important;
 }
+
+.User-Name{
+    color: black;
+    text-decoration: none;
+}

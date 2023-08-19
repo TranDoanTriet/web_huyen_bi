@@ -19,6 +19,7 @@ button{
 }
 .widraw-section{
     margin-top: 10px;
+    padding-bottom: 150px;
 }
 .widraw-section .widraw-person{
     border: 1px solid #a79ca3;
@@ -40,10 +41,22 @@ button{
 
 .widraw-btn{
     background-color: #e7cfda;
-    /* color: white; */
     padding: 10px;
     border-radius: 5px;
+    cursor: pointer;
+}
+.widraw-btn:hover{
+    background-color: #d2d6f4;
 }
 .ml-1{
     margin-left: 15px;
+}
+.f-column{
+    flex-direction: column;
+}
+
+.trangthaichuyentien{
+    background-color: #a8dfdb;
+    padding: 5px;
+    border-radius: 5px;
 }

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/navigation.css">
+    <link rel="stylesheet" href="./css/widraw.css">
+    <title>Lịch sử rút tiền</title>
+</head>
+<body>
+    <div class="app">
+        <div class="history-title">
+            Lịch sử yêu cầu rút tiền
+        </div>
+        <div class="container">
+            <div class="widraw-section">
+                <!-- người dùng chỉ hiện số tiền cần rút và trạng thái chưa duyệt hay đã duyệt -->
+                <div class="widraw-person flex align-tiem-center justify-between">
+                    <div class="">
+                        <div class="mb-1">Ngân hàng: <span class="ml-1">MBBANK</span></div>
+                        <div class="mb-1">STK: <span class="ml-1">984958977458</span></div>
+                        <div class="mb-1">Số tiền rút: <span class="ml-1">300000</span> <span>VND</span></div>
+                    </div>
+                    <div class="flex f-column">
+                        <span class="trangthaichuyentien">
+                            Chưa duyệt
+                        </span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <footer class="footer-navigation">
+        <div class="navigation-1">
+            <ul class="ul-list">
+                <li class="li-list li-active">
+                    <a href="#">
+                        <span class="span-icon">
+                            <ion-icon name="home-outline"></ion-icon>
+                        </span>
+                        <span class="span-title">Trang chủ</span>
+                    </a>
+                </li>
+                <li class="li-list">
+                    <a href="#">
+                        <span class="span-icon">
+                            <ion-icon name="game-controller-outline"></ion-icon>
+                        </span>
+                        <span class="span-title">Bình chọn</span>
+                    </a>
+                </li>
+                <li class="li-list">
+                    <a href="#">
+                        <span class="span-icon">
+                            <ion-icon name="person-outline"></ion-icon>
+                        </span>
+                        <span class="span-title">Tài khoản</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+</body>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script src="./js/navigation.js"></script>
+</html>
